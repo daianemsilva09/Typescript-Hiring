@@ -25,12 +25,12 @@ enum StatusAprovacao {
 }
 const statusDaAprovacao: StatusAprovacao = StatusAprovacao.Aprovado;
 
-//Any
+/*Any
 const retornoDaAPI: any[] = [123, 'Dai', false];
 const retornoDaAPI2 = any = {
     // .....
-};
-
+}
+*/
 //Void 
 function printarNaTela(msg: string): void {
     console.log(msg);
