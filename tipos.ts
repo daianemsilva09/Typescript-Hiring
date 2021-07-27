@@ -46,8 +46,13 @@ function criar(objecto: object) {
     //.
 }
 criar({ propriedade: 1, })
- // criar ('Victor')// da erro
+// criar ('Victor')// da erro
 
+//Union types 
+const nota: string | number = 5;
+function exibirNota(nota: number | string) {
+    console.log(`a nota é $(nota)`);
+}
 
-
-
+exibirNota('10');
+exibirNota(10);
