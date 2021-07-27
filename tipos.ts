@@ -81,3 +81,19 @@ function tratarFuncionarios(funcionarios: Funcionario[]) {
         console.log('nome do funcionario:', funcionario.nome);
     }
 }
+
+
+
+const altura = 1.6;
+//altura = null;
+
+type Contato = {
+    nome: string;
+    telefone1: string;
+    telefone2?: string;
+}
+// ponto de interrogação deixa indefinido
+const contato: Contato = {
+    nome: 'Dai',
+    telefone1: '12345'
+}

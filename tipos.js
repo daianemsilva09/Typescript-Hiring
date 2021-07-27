@@ -39,3 +39,33 @@ function criar(objecto) {
 }
 criar({ propriedade: 1, });
 // criar ('Victor')// da erro
+//Union types 
+var nota = 5;
+function exibirNota(nota) {
+    console.log("a nota \u00E9 $(nota)");
+}
+exibirNota('10');
+exibirNota(10);
+//type Funcionarios = array<funcionario>;
+var funcionarios = [{
+        nome: 'Dai',
+        sobrenome: 'Silva',
+        dataNascimento: new Date()
+    },
+    {
+        nome: 'Daiane',
+        sobrenome: 'Silvaaa',
+        dataNascimento: new Date()
+    }];
+function tratarFuncionarios(funcionarios) {
+    for (var _i = 0, funcionarios_1 = funcionarios; _i < funcionarios_1.length; _i++) {
+        var funcionario = funcionarios_1[_i];
+        console.log('nome do funcionario:', funcionario.nome);
+    }
+}
+var altura = 1.6;
+// ponto de interrogação deixa indefinido
+var contato = {
+    nome: 'Dai',
+    telefone1: '12345'
+};
