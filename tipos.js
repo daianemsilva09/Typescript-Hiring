@@ -69,3 +69,9 @@ var contato = {
     nome: 'Dai',
     telefone1: '12345'
 };
+//Type Assertion
+var minhaIdade = 23;
+minhaIdade.toString();
+//const input = document.getElementById("numero1") as HTMLInputElement;
+var input = document.getElementById("numero1");
+console.log(input.value);
